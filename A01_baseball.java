@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Assignment01 {
+public class A01_baseball {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int[] randomNum = new int[3];               //랜덤 숫자를 담을 배열 선언
