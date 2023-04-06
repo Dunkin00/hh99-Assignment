@@ -17,6 +17,17 @@ public class A01_baseball {
             }
         }
 
+//      동현님 랜덤 숫자 생성 로직
+//        for (int i = 0; i < answer.length; i++) {
+//            answer[i] = (int)(Math.random() * 10);
+//            for (int j = 0; j < i; j++) {
+//                if (answer[i] == answer[j]) {
+//                    i--;
+//                    break;
+//                }
+//            }
+//        }
+
         System.out.println("컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요!"); //게임 시작 메세지 출력
 
         int count = 0; // 맞춘 시도를 count 하기 위한 변수
@@ -29,6 +40,13 @@ public class A01_baseball {
                 inputNum[i] = inTemp % 10; // inTemp 값을 10으로 나눈 나머지 값을 저장한다.
                 inTemp /= 10;              // ex) 456 % 10 = 6, 45 % 10 = 5, 4 % 10 = 4
             }                              // ex)와 같이 1의 자리 수 부터 값을 저장하기 때문에 for문은 i=2 -> 0까지 i-- 해준다.
+
+//      동현님 입력값 출력 로직
+//          int num = sc.nextInt();
+//          int[] guess = new int[3];
+//          guess[0] = num / 100;
+//          guess[1] = (num % 100) / 10;
+//          guess[2] = num % 10;
 
             int ball = 0;
             int strike = 0;
